@@ -1,0 +1,9 @@
+﻿  Cofres.cpp
+  CustomMath.cpp
+  Enemy.cpp
+  Main.cpp
+C:\Users\Santi\Desktop\ENTI\Programación\AA1_Projecto\Projecto Programación\Trabajo p.2\Main.cpp(12,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Map.cpp
+  Player.cpp
+  Generando código...
+  Trabajo p.2.vcxproj -> C:\Users\Santi\Desktop\ENTI\Programación\AA1_Projecto\Projecto Programación\Trabajo p.2\x64\Debug\Trabajo p.2.exe
