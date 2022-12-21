@@ -6,4 +6,4 @@ Gear gear[TOTAL_GEAR] = {
 	Gear {"Radev's Mug", -300, -100, -100, -1},
 	Gear {"Richard's Hatred", 150, -20, 50, 1},
 	Gear {}
-}
+};

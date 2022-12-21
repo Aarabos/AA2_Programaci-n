@@ -136,6 +136,7 @@
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Casilla.h" />
     <ClInclude Include="cofres.h" />
     <ClInclude Include="CustomMath.h" />
     <ClInclude Include="Enemy.h" />

@@ -4,6 +4,7 @@
 #include "Enemy.h"
 #include "cofres.h"
 #include "Gear.h"
+#include "Map.h"
 
 #define NUM1 5
 #define NUM2 5
@@ -23,7 +24,8 @@ int main() {
 	Cofre cofres[5];//Inicializa Cofres
 	for (int i = 0; i < 5; i++)
 		cofres[i].Initialize();
-	PrintMap(p);
+
+	PrintMap();
 
 	int randomGear = rand() % TOTAL_GEAR;
 

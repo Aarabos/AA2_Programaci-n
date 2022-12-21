@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdio>
 #include "Player.h"
+#include "Casilla.h"
 
-void PrintMap(Player +p, Enemy enemies[5]);
+void PrintMap(Casilla mapa[][5]);

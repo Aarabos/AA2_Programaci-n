@@ -59,5 +59,8 @@
     <ClInclude Include="Gear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Casilla.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

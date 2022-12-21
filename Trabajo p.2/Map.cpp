@@ -9,7 +9,12 @@
 #define NUM1 5
 #define NUM2 5
 
-void PrintMap (Player p, Enemy enemies[5]) {
+void Casilla::Initialize() {
+	hasSomething = false;
+	simbolToShow = ' ';
+}
+
+void PrintMap (Casilla mapa[][5]) {
 	
 	printf(" ");
 	//print parte arriba
@@ -28,11 +33,34 @@ void PrintMap (Player p, Enemy enemies[5]) {
 		printf("\n|");
 		//
 		//print 2ª columna (MIDDLE PART)
+
+		int enemiesSpawned = 0;
+
+		for (int j = 0; j < 5; j++) {//me printa los centros de las lineas
+			while (enemiesSpawned < 5) {
+				int x = rand() % 5;
+				int y = rand() % 5;
+				if (!mapa[y][x].hasSomething) {
+					mapa[y][x].hasSomething = true;//esta linea me situa al enemigo en esa casilla
+					enemiesSpawned++;
+				}
+			}
+		}
+		
+		printf("\n|");
+		//print 3ª columna
 		for (int j = 0; j < 5; j++) {
-			char charactertoprint = ' ';
-			//
-			//printa player
-			if (p.position.x == j && p.position.y == i) {
+			printf("___|");
+		}
+		printf("\n");
+	}
+}
+
+
+
+
+	/* 
+	if (p.position.x == j && p.position.y == i) {
 				charactertoprint = 'P';
 				printf(" %c |", charactertoprint);
 			}
@@ -54,13 +82,4 @@ void PrintMap (Player p, Enemy enemies[5]) {
 			}
 
 		}
-
-
-		printf("\n|");
-		//print 3ª columna
-		for (int j = 0; j < 5; j++) {
-			printf("___|");
-		}
-		printf("\n");
-	}
-}
+	*/
