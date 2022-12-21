@@ -9,6 +9,7 @@ void Cofre::Initialize() {
 	Gold = RandomBetweenRange(10, 120);
 	Potion = RandomBetweenRange(0, 2);
 
-	int item;
+	// item que saldrá aleatoriamente
+
 
 }
