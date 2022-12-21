@@ -130,6 +130,7 @@
     <ClCompile Include="Cofres.cpp" />
     <ClCompile Include="CustomMath.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Gear.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="cofres.h" />
     <ClInclude Include="CustomMath.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Gear.h" />
     <ClInclude Include="MapPosition.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Map.h" />

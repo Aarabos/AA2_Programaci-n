@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "Enemy.h"
 #include "cofres.h"
+#include "Gear.h"
 
 #define NUM1 5
 #define NUM2 5
@@ -16,15 +17,21 @@ int main() {
 	p.Initialize(); // Inicializa Player
 
 	Enemy enemies[5];//Inicializa Enemigo
-	enemies[5].Initialize();
-	Cofre cofres[5];//
-
-	PrintMap(p,enemies[5]);
-
-
-
 	for (int i = 0; i < 5; i++)
 		enemies[i].Initialize();
+	
+	Cofre cofres[5];//Inicializa Cofres
+	for (int i = 0; i < 5; i++)
+		cofres[i].Initialize();
+	PrintMap(p);
+
+	int randomGear = rand() % TOTAL_GEAR;
+
+	printf("%s", gear[randomGear].name);
+
+
+
+	
 
 	/*for (int i = 0; i < NUM1; i++) {
 		for (int j = 0; j < NUM2; j++) {

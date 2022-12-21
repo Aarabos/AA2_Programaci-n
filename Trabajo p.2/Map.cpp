@@ -9,11 +9,8 @@
 #define NUM1 5
 #define NUM2 5
 
-void PrintMap(Player p, Enemy enemies[]) {
-	Enemy enemies[5];
-	for (int i = 0; i < 5; i++)
-		enemies[i].Initialize();
-
+void PrintMap (Player p, Enemy enemies[5]) {
+	
 	printf(" ");
 	//print parte arriba
 	for (int i = 0; i < 5; i++) {
@@ -29,10 +26,12 @@ void PrintMap(Player p, Enemy enemies[]) {
 			printf("   |");
 		}
 		printf("\n|");
-
+		//
 		//print 2ª columna (MIDDLE PART)
 		for (int j = 0; j < 5; j++) {
 			char charactertoprint = ' ';
+			//
+			//printa player
 			if (p.position.x == j && p.position.y == i) {
 				charactertoprint = 'P';
 				printf(" %c |", charactertoprint);
